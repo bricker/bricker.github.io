@@ -3,7 +3,7 @@ class SessionsController < ApplicationController
   
   def create
     if Digest::SHA1.hexdigest(params[:username]) == USERNAME and Digest::SHA1.hexdigest(params[:password]) == PASSWORD
-      session[:logged_in] = true
+      cookies.permanent[:auth_token] = AppConfig["auth_token"]
       redirect_to root_path, notice: 'Logged in.'
     else
       redirect_to login_path, alert: "Wrong info."
@@ -11,7 +11,7 @@ class SessionsController < ApplicationController
   end
   
   def destroy
-    session[:logged_in] = nil
+    cookies.delete(:auth_token)
     redirect_to root_path, notice: "Logged out."
   end
   

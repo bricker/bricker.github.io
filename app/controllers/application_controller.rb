@@ -3,7 +3,7 @@ class ApplicationController < ActionController::Base
   
   helper_method :logged_in?
   def logged_in?
-    session[:logged_in]
+    cookies[:auth_token]
   end
   
   def require_login
