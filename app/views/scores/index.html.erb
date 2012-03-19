@@ -1,0 +1,20 @@
+<%= page_header "Scores", "I make scores look good." %>
+
+<% if @scores.present? %>
+	<table id="scores-list">
+	  <% @scores.each do |score| %>
+	    <tr class="score-item">
+			<td class="info">
+		  		<h2><%= link_to "#{score.title}", score.asset.url, target: "_blank" %></h2>
+		  		<%= simple_format(score.description.html_safe, {}, sanitize: false) %>
+		  		<div class="manage"><%= score.asset.content_type %><%= edit_link edit_score_path(score) %></div>
+			</td>
+	  	    <td class="player">
+		    	<%= link_to image_tag(score.asset.url(:thumb), alt: 'Preview', class: 'score-thumb'), score.asset.url, target: "_blank" %>
+	  	    </td>
+		</tr>
+	  <% end %>
+	</table>
+<% end %>
+<%= no_records_check @scores, "Scores" %>
+<%= create_link "score", new_score_path %>

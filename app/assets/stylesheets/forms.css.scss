@@ -1,0 +1,119 @@
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+#error_explanation {
+  width: auto;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+	h2 {
+	  text-align: left;
+	  font-weight: bold;
+	  padding: 5px 5px 5px 15px;
+	  font-size: 12px;
+	  margin: -7px;
+	  margin-bottom: 0px;
+	  background-color: #c00;
+	  color: #fff;
+	}
+	ul li {
+	  font-size: 12px;
+	  list-style: square;
+	}
+}
+
+/***********************************/
+/* GENERAL FORM */
+/***********************************/
+
+form {
+	background: #D8CAA8;
+	padding: 20px;
+	width: 500px;
+	&.big {
+		width: 100%;
+	}
+	fieldset {
+		border: none;
+		margin-bottom: 10px;
+		&:last-of-type {
+			margin-bottom: 0;
+		}
+	}
+	legend {
+		color: #363942;
+		font-size: 16px;
+		font-weight: bold;
+		padding-bottom: 10px;
+	}
+	ol li {
+		background: #837867;
+		border: 0;
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+		border-radius: 5px;
+		line-height: 30px;
+		list-style: none;
+		padding: 5px 10px;
+		margin-bottom: 2px;
+	}
+	ol ol li {
+		background: none;
+		border: none;
+		float: left;
+	}
+	label {
+		float: left;
+		font-size: 13px;
+		width: 110px;
+		color: #fff;
+		font-weight: bold;
+		font-size: 1em;
+	}
+	input:not([type=submit]), textarea {
+		background: #fff;
+		border: none;
+		-moz-border-radius: 3px;
+		-webkit-border-radius: 3px;
+		-khtml-border-radius: 3px;
+		border-radius: 3px;
+		font: 13px verdana, arial, helvetica, sans-serif;
+		outline: none;
+		padding: 5px;
+		width: 300px;
+	}
+	input:not([type=submit]):focus, textarea:focus {
+		background: #eaeaea;
+	}
+	input[type=submit] {
+		background: #D8CAA8;
+		border: 1px solid #000;
+		color: #000;
+		display: block;
+		font: 18px verdana, arial, helvetica, sans-serif;
+		font-weight: bold;
+		letter-spacing: 1px;
+		margin: auto;
+		padding: 7px 10px;
+		float: right;
+		&:hover {
+			color: #5C832F;
+			cursor: pointer;
+		}
+	}
+}
+
+textarea.ckeditor {
+	width: 500px;
+	border: none;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	-khtml-border-radius: 0;
+	border-radius: 0;
+	padding: 0;
+}

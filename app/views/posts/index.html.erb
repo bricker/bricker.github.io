@@ -1,0 +1,5 @@
+<%= page_header "Blog", "My thoughts on creating music." %>
+<%= render @posts %>
+<%= no_records_check(@posts, "Posts") %>
+<%= paginate @posts %>
+<%= create_link "post", new_post_path %>

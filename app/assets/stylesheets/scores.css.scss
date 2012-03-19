@@ -1,0 +1,20 @@
+// Place all the styles related to the scores controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+#scores-list {
+	.info {
+		width: 60%;
+	}
+	.player {
+		width: 40%;
+		vertical-align: top;
+		text-align: center;
+		img {
+			width: 125px;
+		}
+	}
+	.edit-link {
+		padding-left: 10px;
+	}
+}

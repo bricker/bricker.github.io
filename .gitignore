@@ -1,0 +1,10 @@
+.bundle
+.rvmrc
+.rspec
+config/secrets.yml
+db/*.sqlite3
+log/*.log
+tmp/
+.sass-cache/
+public/scores/
+.DS_Store

@@ -1,0 +1,20 @@
+<%= page_header "Audio", "Original compositions and arrangements." %>
+
+<% if @audios.present? %>
+	<table id="audio-list">
+	  <% @audios.each do |audio| %>
+	    <tr class="audio-item">
+		  <td class="info">
+			<h2><%= audio.title %></h2>
+			<%= simple_format(audio.description.html_safe, {}, sanitize: false) %>
+			<%= edit_link edit_audio_path(audio) %>
+		  </td>
+		  <td class="player">
+			<iframe width="100%" height="166" scrolling="no" frameborder="no" src="http://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F<%= audio.soundcloud_id %>&amp;auto_play=false&amp;show_artwork=false&amp;show_playcount=false&amp;color=ff7700"></iframe>
+		  </td>
+		</tr>
+	  <% end %>
+	</table>
+<% end %>
+<%= no_records_check @audios, "Audios", message: "There is no audio right now." %>
+<%= create_link "audio", new_audio_path %>

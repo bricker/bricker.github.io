@@ -1,0 +1,25 @@
+<%= form_for score, html: { multipart: true } do |f| %>
+  <%= check_for_errors score %>
+  <fieldset>
+	<legend><%= title %></legend>
+	<ol>
+		<li>
+			<%= f.label :title %>
+			<%= f.text_field :title %>
+		</li>
+		
+		<li>
+			<%= f.label :asset, "File" %>
+			<%= f.file_field :asset %>
+		</li>
+
+		<li>
+			<%= f.label :description %>
+			<%= f.text_area :description, size: "30x5" %>
+		</li>
+	</ol>
+  </fieldset>
+  <fieldset>
+    <%= f.submit %>
+  </fieldset>
+<% end %>

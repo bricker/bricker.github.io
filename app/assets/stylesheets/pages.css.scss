@@ -1,0 +1,147 @@
+// Place all the styles related to the pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+/***********************************/
+/* HOME PAGE */
+/***********************************/
+#navbox.home {
+	font-size: 35px;
+	letter-spacing: 17px;
+	line-height: 31px;
+	margin: 190px auto 0 auto;
+	width: 730px;
+	height: 280px;
+}
+
+#bryanricker.home {
+	margin-top: 0px;
+	margin-left: 172px;
+	letter-spacing: .49em;
+}
+
+#music.home {
+	margin-top: -124px;
+	margin-left: 400px;
+	display: none
+}
+
+#blog.home {
+	margin-top: -31px;
+	margin-left: 172px;
+}
+
+#scores.home {
+	margin-top: -124px;
+	margin-left: 210px;
+}
+
+#audio.home {
+	margin-top: -31px;
+	margin-left: 286px;
+}
+
+#video.home {
+	margin-top: -124px;
+	margin-left: 514px;
+}
+
+#contact.home {
+	margin-top: -31px;
+	margin-left: 439px;
+}
+
+/***********************************/
+/* SMALL NAV */
+/***********************************/
+#navbox {
+	font-size: 18px;
+	font-family: Courier, "Courier New", monospace;
+	font-weight: bold;
+	color: #382513;
+	margin: 70px auto 0 auto;
+	padding: 0;
+	border: 0;
+	width: 250px;
+	height: 130px;
+	line-height: 16px;
+	a {
+		text-decoration: none;
+		font-weight: normal;
+		.name {
+			text-decoration: none;
+			font-weight: bold;
+		}
+	}
+}
+
+#bryanricker {
+	margin-top: 0px;
+	margin-left: 4px;
+	letter-spacing: .52em;
+	position: relative;
+	z-index: 10;
+	a {
+		color: #382513;
+		font-weight: bold;
+		&:hover {
+			color: #5C832F;
+		}
+	}
+}
+
+#music {
+	margin-top: -64px;
+	margin-left: 124px;
+	width: 15px;
+	float: left;
+	position: absolute;
+	font-weight: bold;
+	z-index: 1;
+	display: none;
+}
+
+#blog {
+	margin-top: -16px;
+	margin-left: 4px;
+	width: 15px;
+	float: left;
+	position: absolute;
+	z-index: 1;
+}
+	
+#scores {
+	margin-top: -64px;
+	margin-left: 24px;
+	width: 15px;
+	float: left;
+	position: absolute;
+	z-index: 1;
+}
+
+#audio {
+	margin-top: -16px;
+	margin-left: 64px;
+	width: 15px;
+	float: left;
+	position: absolute;
+	z-index: 1;
+}
+
+#video {
+	margin-top: -64px;
+	margin-left: 184px;
+	width: 15px;
+	float: left;
+	position: absolute;
+	z-index: 1;
+}
+
+#contact {
+	margin-top: -16px;
+	margin-left: 144px;
+	width: 15px;
+	float: left;
+	position: absolute;
+	z-index: 1;
+}
