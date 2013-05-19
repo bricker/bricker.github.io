@@ -37,6 +37,13 @@ a {
         color: #005580;
     }
 
+em {
+    font-style: italic;
+}
+
+strong {
+    font-weight: bold;
+}
 
 p, ul { 
     padding-bottom: 20px;
