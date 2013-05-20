@@ -105,3 +105,17 @@ article {
         padding-bottom: 10px;
     }
 
+
+    @media screen and (max-width: 450px) {
+        h1 {
+            font-size: 1.3em;
+        }
+        
+        h3 {
+            font-size: 1em;
+        }
+
+        h6 {
+            font-size: 1em;
+        }
+    }
