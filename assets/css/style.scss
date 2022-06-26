@@ -1,0 +1,28 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+ul.links {
+  list-style: none;
+  width: 100%;
+  margin-bottom: 0px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+
+  li {
+    display: inline-flex;
+    padding: 10px;
+  }
+}
+
+hr {
+  margin-bottom: 0.5em;
+}
+
+footer {
+  margin-top: 2em;
+}
